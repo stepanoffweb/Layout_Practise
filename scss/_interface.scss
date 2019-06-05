@@ -1,0 +1,110 @@
+body {
+    @include light();
+    color: $text-color;
+}
+img {
+    max-width: 100%;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.section {
+    padding: 100px 0;
+    &-title {
+        font-size: 30px;
+        @include bold();
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__title {
+        margin-bottom: 100px;
+    }
+}
+
+.button-o {
+    border: 2px solid $primary;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 22px;
+    font-size: 12px;
+    @include bold();
+    background-color: #fff;
+}
+.button {
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px 45px;
+    background-color: $primary;
+    color: #fff;
+    @include bold();
+    &:hover {
+        cursor: pointer;
+    }
+    &-fitting {
+        color: $primary;
+        background-color: #fff;
+    }
+    &-add {
+        background-color: lighten($primary, 10%);
+        color: #fff;
+    }
+    &-like {
+        background-color: $primary;
+        height: 30px;
+        width: 30px;
+        border: none;
+    }
+}
+.bg-secondary {
+    background: $bg-secondary;
+}
+.input {
+    height: 80px;
+    padding: 30px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-right-width: 0;
+    &:last-child {
+        border-right-width: 1px;
+
+    }
+}
+.checkbox {
+    display: none;
+    &:checked + label:before {
+        background-color: $primary;
+    }
+    &-label {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        &:hover {
+            cursor: pointer;
+        }
+        &:before {
+            content: '';
+            height: 30px;
+            width: 30px;
+            border: 1px solid #ddd;
+            margin-right: 20px;
+        }
+    }
+}
+// Оформление псевдоэлемента before как inline-block, либо родитель - flex...
+@media (max-width: 576px) {
+    .button {
+        font-size: 10px;
+        &-o{
+            font-size: 10px;
+        }
+    }
+    .section {
+        padding: 60px 0;
+        &__title {
+            font-size: 24px;
+        }
+    }
+}

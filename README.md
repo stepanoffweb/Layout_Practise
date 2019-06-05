@@ -1,0 +1,3 @@
+# skinaly
+Learning template from Glo Academy.
+No jokes...

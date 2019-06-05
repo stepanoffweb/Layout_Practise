@@ -1,0 +1,15 @@
+.factory {
+    &-block {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &__text {
+            margin-left: 70px;
+            flex-basis: 50%;
+            font-size: 20px;
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+}
