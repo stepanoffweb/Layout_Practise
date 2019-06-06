@@ -16,11 +16,11 @@
                 <nav class="menu__nav">
                     <a href="#" class="menu__link">Главная</a>
                     <a href="#" class="menu__link">Производитель</a>
-                    <a href="#" class="menu__link">Каталог</a>
+                    <a href="#catalog" class="menu__link">Каталог</a>
                     <a href="#" class="menu__link">ПРимеры работ</a>
                     <a href="#" class="menu__link">Примерка изображений</a>
                     <a href="#" class="menu__link">Стоимость дилерам</a>
-                    <a href="#" class="menu__link">О ...</a>
+                    <a href="#" class="menu__link">О компании</a>
                 </nav>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     </button>
                     <div class="logo navbar__logo">
                         <strong class="logo__text">Фабрика скинали</strong>
-                        <span class="logo__description">Ведущий производитель ...</span>
+                        <span class="logo__description">Ведущий производитель скинали</span>
                     </div>
                     <div class="navbar__mobile">
                         <a class="navbar__phone" href="tel:+3332221111">+333-222-1111</a>
@@ -44,16 +44,17 @@
                         <a class="navbar__phone" href="tel:+3332221111">+333-222-1111</a>
                         <a class="navbar__email navbar__small-text" href="mailto: info@.cu">info!mail.cu</a>
                     </div>
-                    <button class="button-o navbar__button">Получить консультацию</button>
+                    <!-- instead of <button> we use <a> to imply the scrolling-->
+                    <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
                 </div>
             </div>
         </div>
         <!-- /.navbar -->
         <div class="hero">
             <div class="container">
-                <h1 class="hero__title">Гарантия<br>минимальной цены<br>на ...</h1>
+                <h1 class="hero__title">Гарантия<br>минимальной цены<br>на скинали</h1>
                 <span class="hero__subtitle">от 3 000 руб/м2</span>
-                <button class="button hero__button">Заказать ...</button>
+                <button class="button hero__button">Заказать скинали</button>
             </div>
             <!-- /.conteiner -->
         </div>
@@ -61,15 +62,24 @@
     </header>
     <!-- /.header -->
     <main>
-        <section class="offer bg-secondary">
+        <section class="offer bg-secondary" id="offer">
             <div class="container">
                 <div class="offer__block offer-block offer-block__calc">
                     <h2 class="offer__title">оставьте заявку на расчет</h2>
-                    <span class="offer__subtitle">и получите скидку 30% на изготовление ... или ... для ...</span>
+                    <span class="offer__subtitle">и получите скидку 30% на изготовление фартука или скинали </span>
                     <form action="#" class="form offer__form">
                         <div class="form__row">
-                            <div class="form__group"><label for="" class="form__label">Вид стекла</label>
-                                <input type="text" class="input form__input">
+                            <div class="form__group">
+                                <label for="" class="form__label">Вид стекла</label>
+                                <!-- It's pretty hard to customize a Select tag??, so we put in an Input. Also if we give to select class form__input it will become looks like other inputs - much more easy way...-->
+                                <input type="hidden" name="type" value="С печатью" id="select-type">
+                                <div class="select form__select">
+                                    <div class="select_checked">С печатью</div>
+                                    <ul class="select__dropdown">
+                                        <li class="select__option" data-value="С печатью">С печатью</li>
+                                        <li class="select__option" data-value="Без печати">Без печати</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form__group"><label for="" class="form__label">Ширина, см</label>
                                 <input type="text" class="input form__input">
@@ -100,7 +110,8 @@
                 </div>
             </div>
         </section>
-        <section class="features section">
+        <!-- /.section offer -->
+        <section class="section features">
             <div class="container">
                 <h2 class="section-title section__title">наши преимущества</h2>
                 <div class="feature-block">
@@ -131,7 +142,8 @@
                 </div>
             </div>
         </section>
-        <section class="section catalog">
+        <!-- /.section features -->
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section-title section__title">каталог ...</h2>
                 <div class="catalog-block">
@@ -385,7 +397,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section steps -->
-        <section class="sectiop before">
+        <section class="section before">
             <div class="container">
                 <h2 class="section-title section__title">До и после</h2>
                 <div class="before-slider-wrap">
@@ -453,8 +465,8 @@
                     <form action="#" class="form offer__form">
                         <div class="form__row">
                             <input type="text" class="input form__input" placeholder="Ваше имя">
-                            <input type="text" class="input form__input" placeholder="Ваш телефон">
-                            <input type="text" class="input form__input" placeholder="Ваша цена">
+                            <input type="tel" class="input form__input" placeholder="Ваш телефон">
+                            <input type="number" class="input form__input" placeholder="Ваша цена">
                         </div>
                         <div class="form__row">
                             <div class="form__group">
@@ -580,19 +592,8 @@
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script src="js/slick.min.js"></script>
-    <script>$(window).load(function () {
-            $(".before-after").twentytwenty({
-                 before_label: 'до применения', // Set a custom before label
-                 after_label: 'после применения', // Set a custom after label
-            });
-            $('.before-slider').slick({
-                draggable: false,
-                dots: true,
-                prevArrow: $('.arrow__left'),
-                nextArrow: $('.arrow__right'),
-                dotsClass: 'before-slider__dots',
-            });
-        });</script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
 
 </body>
 </html>

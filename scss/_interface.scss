@@ -9,6 +9,7 @@ ul,
 li {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 .section {
     padding: 100px 0;
@@ -63,13 +64,61 @@ li {
 }
 .input {
     height: 80px;
-    padding: 30px;
     width: 100%;
+    padding-left: 30px;
     border: 1px solid #ddd;
     border-right-width: 0;
     &:last-child {
         border-right-width: 1px;
 
+    }
+}
+input[type="checkbox"] {
+    display: none;
+    // really strange: label always goes BEFORE the input, but in this case it's reverse
+    &:checked + label:before {
+        background-color: $primary;
+    }
+}
+.select {
+    height: 80px;
+    width: 100%;
+    border: 1px solid #ddd;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        width: 30px;
+        height: 20px;
+        background: url(../img/icons/caret-down-24.png) no-repeat center;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &_checked {
+        line-height: 80px;
+        padding-left: 30px;
+    }
+    &__dropdown {
+        position: absolute;
+        z-index: 10;
+        top: 80px;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        display: none;
+        &_open {
+            display: block;
+        }
+    }
+    &__option {
+        padding: 20px;
+        &:hover {
+            background-color: $bg-secondary;
+        }
     }
 }
 .checkbox {
@@ -93,7 +142,7 @@ li {
         }
     }
 }
-// Оформление псевдоэлемента before как inline-block, либо родитель - flex...
+// styling  before as inline-block, eather the parent will be - flex...
 @media (max-width: 576px) {
     .button {
         font-size: 10px;

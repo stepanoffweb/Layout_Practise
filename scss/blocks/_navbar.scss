@@ -38,7 +38,7 @@
     background-color: $primary;
     transform: translateY(-200%);
     transition: .2s;
-    &-active {
+    &__active {
         transform: translateY(0);
     }
     &__nav {
@@ -63,6 +63,9 @@
         border-left: 1px solid rgba(#510bba, 0.1);
         height: 80px;
         width: 70px;
+        &:hover {
+            cursor: pointer;
+        }
         &__line {
             display: block;
             height: 3px;

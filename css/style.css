@@ -158,6 +158,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .section {
@@ -222,14 +223,72 @@ li {
 
 .input {
   height: 80px;
-  padding: 30px;
   width: 100%;
+  padding-left: 30px;
   border: 1px solid #ddd;
   border-right-width: 0;
 }
 
 .input:last-child {
   border-right-width: 1px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #507fe1;
+}
+
+.select {
+  height: 80px;
+  width: 100%;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.select:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  width: 30px;
+  height: 20px;
+  background: url(../img/icons/caret-down-24.png) no-repeat center;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.select_checked {
+  line-height: 80px;
+  padding-left: 30px;
+}
+
+.select__dropdown {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+.select__dropdown_open {
+  display: block;
+}
+
+.select__option {
+  padding: 20px;
+}
+
+.select__option:hover {
+  background-color: #f1f1f1;
 }
 
 .checkbox {
@@ -331,7 +390,7 @@ li {
   transition: .2s;
 }
 
-.menu-active {
+.menu__active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -374,6 +433,10 @@ li {
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   height: 80px;
   width: 70px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
 }
 
 .menu-button__line {
@@ -665,6 +728,14 @@ li {
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
 }
 
+.catalog-card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .5;
+  transition: .5;
+  opacity: 1;
+}
+
 .catalog-card__buttons {
   position: absolute;
   display: -webkit-box;
@@ -672,6 +743,9 @@ li {
   display: flex;
   bottom: 0;
   right: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .catalog-card__button {

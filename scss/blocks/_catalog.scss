@@ -12,11 +12,20 @@
         max-width: 570px;
         position: relative;
         box-shadow: 7px 5px 21px rgba(0,0,0, .1);
+        &:hover {
+            .catalog-card__buttons {
+                transform: translateY(0);
+                transition: .5;
+                opacity: 1;
+            }
+        }
         &__buttons {
             position: absolute;
             display: flex;
             bottom: 0;
             right: 0;
+            opacity: 0;
+            transform: translateY(100%);
         }
         &__button {
             border: none;
