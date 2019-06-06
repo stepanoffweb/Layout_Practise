@@ -393,6 +393,7 @@ input[type="checkbox"]:checked + label:before {
 .menu__active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  z-index: 99;
 }
 
 .menu__nav {
