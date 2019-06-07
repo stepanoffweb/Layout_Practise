@@ -30,8 +30,14 @@ $(window).load(function () {
             });
             // Masked Input plugin for jQuery
             $('[type="tel"]').mask("+7 (999) 999-99-99");
-
+            // lazy load for GoogleMaps
+            let reviews = $('.reviews');
+            let reviewsTop = reviews.offset().top;
+            $(window).bind('scroll',function() {
+                let windowTop = $(this).scrollTop();
+                if(windowTop > reviewsTop) {
+                    $(window).unbind('scroll');
+                    $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af1035ace569333faf374a794c16cdc767070811989d7741accc8008bccb00268&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>');
+                }
+            });
         });
-
-
-

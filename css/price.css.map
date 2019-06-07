@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACK,AAAD,YAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,SAAS,EAAE,IAAI;CAClB;;AACA,AAAD,WAAM,CAAC;EACH,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAgB;CAQzC;;AAPI,AAAD,iBAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB;;AACA,AAAD,kBAAQ,CAAC;EACL,MAAM,EAAE,CAAC;EACT,SAAS,EAAE,IAAI;CAClB",
-    "sources": [
-        "../scss/blocks/price.scss"
-    ],
-    "names": [],
-    "file": "price.css"
-}
