@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="navbar__landline">
                         <a class="navbar__phone" href="tel:+3332221111">+7 333-222-1111</a>
-                        <a class="navbar__email navbar__small-text" href="mailto: info@.cu">info@mail.cu</a>
+                        <a class="navbar__email navbar__small-text" href="mailto:info@.cu">info@mail.cu</a>
                     </div>
                     <!-- instead of <button> we use <a> to imply the scrolling-->
                     <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
@@ -68,8 +68,8 @@
                     <form action="#" class="form offer__form">
                         <div class="form__row">
                             <div class="form__group">
-                                <label for="" class="form__label">Вид стекла</label>
-                                <!-- It's pretty hard to customize a Select tag??, so we put in an Input. Also if we give to select class form__input it will become looks like other inputs - much more easy way...-->
+                                <label  class="form__label">Вид стекла</label>
+                                <!-- It's pretty hard to customize a Select tag??, so we put in an Input. Also if we give to <select> class form__input it will become looks like other inputs - much more easy way...-->
                                 <input type="hidden" name="type" value="С печатью" id="select-type">
                                 <div class="select form__select">
                                     <div class="select_checked">С печатью</div>
@@ -79,11 +79,11 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="form__group"><label for="" class="form__label">Ширина, см</label>
-                                <input type="text" class="input form__input">
+                            <div class="form__group"><label for="width" class="form__label">Ширина, см</label>
+                                <input type="text" class="input form__input" id="width">
                             </div>
-                            <div class="form__group"><label for="" class="form__label">Высота, см</label>
-                                <input type="text" class="input form__input">
+                            <div class="form__group"><label for="height" class="form__label">Высота, см</label>
+                                <input type="text" class="input form__input" id="height">
                             </div>
                         </div>
                         <div class="form__row form__row-checkbox">
@@ -304,7 +304,7 @@
                         <div class="price-card__text">
                             <div class="price-card__pricetag">
                                 <h4 class="price-card__title">С подсветкой</h4>
-                                <span class="price-card__cost"от 3 500$></span>
+                                <span class="price-card__cost">от 3 500$</span>
                             </div>
                             <div class="price-card__button"><button class="button">оставить заявку</button></div>
                         </div>
@@ -314,7 +314,7 @@
                         <div class="price-card__text">
                             <div class="price-card__pricetag">
                                 <h4 class="price-card__title">Световые панели</h4>
-                                <span class="price-card__cost"от 3 500$></span>
+                                <span class="price-card__cost">от 3 500$</span>
                             </div>
                             <div class="price-card__button"><button class="button">оставить заявку</button></div>
                         </div>
