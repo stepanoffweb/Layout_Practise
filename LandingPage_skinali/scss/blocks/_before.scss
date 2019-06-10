@@ -1,0 +1,55 @@
+.before {
+    &-slider {
+        &-wrap {
+            max-width: 640px;
+            margin: auto;
+            position: relative;
+        }
+        &-arrows {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &__dots {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            button {
+                display: none;
+            }
+            li {
+                width: 10px;
+                height: 10px;
+                margin: 5px;
+                border-radius: 50%;
+                background-color: #d1d1d1;
+                &.slick-active {
+                    background-color: #5b7fda;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    & img {
+        width: 25px;
+        height: 25px;
+    }
+    &__left {
+        transform: translateX(-200%);
+    }
+    &__right {
+        transform: translateX(200%);
+    }
+}

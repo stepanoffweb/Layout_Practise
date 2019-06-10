@@ -1,0 +1,115 @@
+.navbar {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+    }
+    &__mobile, &__landline {
+        text-align: right;
+    }
+    &__phone {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 19px;
+        @include bold();
+        text-decoration: none;
+        color: $text-color;
+    }
+    &__small-text {
+        display: block;
+        font-size: 14px;
+        color: $text-color-light;
+    }
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 16px 0;
+    background-color: $primary;
+    transform: translateY(-200%);
+    transition: .2s;
+    &__active {
+        transform: translateY(0);
+        z-index: 99;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        border-right: 1px solid rgba(#510bba, 0.1);
+        border-left: 1px solid rgba(#510bba, 0.1);
+        height: 80px;
+        width: 70px;
+        &:hover {
+            cursor: pointer;
+        }
+        &__line {
+            display: block;
+            height: 3px;
+            width: 20px;
+            background-color: #89a9eb;
+            margin: 2px 0;
+        }
+    }
+}
+.logo {
+    &__text {
+        display: block;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 18px;
+        @include bold();
+    }
+    &__description {
+        display: block;
+        font-size: 14px;
+        color: $text-color-light;
+    }
+}
+@media (max-width: 992px) {
+    .navbar {
+        &__landline, &__mobile {
+            display: none;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .logo {
+        display: none;
+    }
+    .menu {
+        &-button {
+            height: 60px;
+        }
+        &__nav {
+            flex-direction: column;
+        }
+        &__link {
+            margin-bottom: 20px;
+        }
+    }
+}
