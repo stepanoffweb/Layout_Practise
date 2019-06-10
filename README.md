@@ -1,5 +1,5 @@
-#Layout_Practise
-
+# Layout_Practise
+  This repo is a collection of my training sites.
 
 ## LandingPage_skinali
 
