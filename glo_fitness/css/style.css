@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url("../fonts/AvenirNextCyr-Regular.eot"), url("../fonts/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextcyr-Regular.ttf") format("true-type");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  src: url("../fonts/AvenirNextCyr-Medium.eot"), url("../fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextcyr-Medium.ttf") format("true-type");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Avenir Next Cyr Regular';
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  background: #192430 url("../img/adult-attractive-beautiful.jpg") no-repeat bottom/cover;
+  color: #fff;
+  padding-top: 36px;
+  padding-bottom: 239px;
+}
+
+.header-title {
+  max-width: 641px;
+  font-size: 106px;
+  margin-bottom: 30px;
+}
+
+.header-subtitle {
+  display: block;
+  font-size: 27px;
+  margin-bottom: 84px;
+}
+
+.button {
+  display: block;
+  text-transform: uppercase;
+  text-shadow: 0 2px 21px rgba(239, 255, 252, 0.45);
+  background-color: #23dcb8;
+  background-image: linear-gradient(-241deg, #48d7bb 0%, #0eb595 100%);
+  padding: 30px 58px;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 18px;
+  -webkit-box-shadow: 0 12px 43px rgba(35, 220, 184, 0.3);
+          box-shadow: 0 12px 43px rgba(35, 220, 184, 0.3);
+}
+
+.navbar {
+  margin-bottom: 229px;
+}
+
+.navbar-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-logo__name {
+  margin-right: 39px;
+  font-size: 26px;
+}
+
+.navbar-logo__description {
+  font-size: 16px;
+  padding-left: 39px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-phone {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-social__item {
+  width: 25px;
+}
+
+.navbar-social__link {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

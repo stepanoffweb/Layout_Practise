@@ -1,0 +1,72 @@
+@import '_fonts';
+
+body {
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Avenir Next Cyr Regular';
+}
+img {
+    max-width: 100%;
+}
+
+.header {
+    background: #192430 url('../img/adult-attractive-beautiful.jpg') no-repeat bottom/cover;
+    color: #fff;
+    padding-top: 36px;
+    padding-bottom: 239px;
+    &-title {
+        max-width: 641px;
+        font-size: 106px;
+        margin-bottom: 30px;
+    }
+    &-subtitle {
+        display: block;
+        font-size: 27px;
+        margin-bottom: 84px;
+    }
+}
+
+.button {
+    display: block;
+    text-transform: uppercase;
+    text-shadow: 0 2px 21px rgba(239, 255, 252, .45);
+    background-color: #23dcb8;
+    background-image: linear-gradient(-241deg, #48d7bb 0%, #0eb595 100% );
+    padding: 30px 58px;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 12px 43px rgba(35, 220,184, .30);
+}
+
+.navbar {
+    margin-bottom: 229px;
+    &-logo {
+        display: flex;
+        justify-content: center;
+        &__name {
+            margin-right: 39px;
+            font-size: 26px;
+        }
+        &__description {
+            font-size: 16px;
+            padding-left: 39px;
+            border-left: 1px solid rgba(#fff, .2);
+        }
+    }
+    &-phone {
+        text-decoration: none;
+        color: #fff;
+    }
+    &-social {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            width: 25px;
+        }
+        &__link {
+            color: #fff;
+        }
+    }
+}
