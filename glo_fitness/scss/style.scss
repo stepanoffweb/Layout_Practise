@@ -1,7 +1,7 @@
 @import '_fonts';
 
 body {
-    margin: 20px;
+    margin: 0;
     font-size: 20px;
     font-family: 'Avenir Next Cyr Regular';
 }
@@ -13,11 +13,12 @@ img {
     background: #192430 url('../img/adult-attractive-beautiful.jpg') no-repeat bottom/cover;
     color: #fff;
     padding-top: 36px;
-    padding-bottom: 239px;
+    padding-bottom: 150px;
     &-title {
         max-width: 641px;
         font-size: 106px;
         margin-bottom: 30px;
+        font-family: 'Bebas';
     }
     &-subtitle {
         display: block;
@@ -59,11 +60,24 @@ img {
         text-decoration: none;
         color: #fff;
     }
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     &-social {
         display: flex;
         justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
         &__item {
             width: 25px;
+            padding: 0;
+            margin-right: 16px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
         &__link {
             color: #fff;
