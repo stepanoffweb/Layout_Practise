@@ -1,10 +1,19 @@
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 500;
   color: #fff;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
 }
 
 .main {
@@ -28,14 +37,15 @@
           justify-content: center;
 }
 
-.main-text__description {
-  font-size: 14px;
+.main-text__subtitle {
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: .7;
+  text-transform: uppercase;
   position: relative;
 }
 
-.main-text__description::before {
+.main-text__subtitle::before {
   content: '';
   position: absolute;
   left: -40px;
@@ -45,7 +55,7 @@
   background-color: #fff;
 }
 
-.main-text__description::after {
+.main-text__subtitle::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -57,15 +67,14 @@
 
 .main-text__header {
   margin: 20px 0 22px;
-  font-size: 85px;
+  font-size: 8.5rem;
   font-weight: 500;
 }
 
-.main-text__text {
+.main-text__description {
   width: 375px;
   margin: 0;
   margin-bottom: 180px;
-  font-size: 16px;
   font-weight: normal;
   line-height: 1.75;
   text-align: center;
@@ -85,7 +94,7 @@
 
 .logo__text {
   color: #fff;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: 6px;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 700;
@@ -118,7 +127,7 @@
   border-radius: 100px;
   padding: 19px 33px;
   margin-left: 50px;
-  font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -141,5 +150,182 @@
   margin-bottom: 50px;
   line-height: 64px;
   text-align: center;
+}
+
+.table {
+  padding-top: 120px;
+  background-color: #f9fafc;
+  text-align: center;
+}
+
+.table-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-header__subtitle {
+  margin-bottom: 2.5rem;
+  color: #9fa4af;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .7;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.table-header__subtitle::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  width: 24px;
+  height: 1px;
+  background-color: #6e45e2;
+}
+
+.table-header__subtitle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 1px;
+  background-color: #6e45e2;
+  right: -40px;
+}
+
+.table-header__title {
+  margin-bottom: 40px;
+  font-family: 'Maven Pro';
+  font-size: 6rem;
+  font-weight: 500;
+  color: #4f4f6f;
+}
+
+.table-header__description {
+  width: 375px;
+  margin-bottom: 100px;
+  color: #9fa4af;
+}
+
+.price-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 340px;
+}
+
+.price-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 440px;
+  border-radius: 30px;
+  border: solid 1px #d7dbe8;
+  background-color: #ffffff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.price-tag:nth-child(2) {
+  margin: 0 50px;
+}
+
+.price-tag:hover {
+  -webkit-box-shadow: 0 0 81.9px 10.1px rgba(204, 204, 223, 0.71);
+          box-shadow: 0 0 81.9px 10.1px rgba(204, 204, 223, 0.71);
+}
+
+.price-tag__img {
+  height: 110px;
+  margin-top: 60px;
+}
+
+.price-tag__title {
+  margin-top: 53px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #9fa4af;
+}
+
+.price-tag__price {
+  font-size: 18.5px;
+  margin-top: 28px;
+}
+
+.price-tag__price, .price-tag__price sup {
+  font-weight: 500;
+  color: #4f4f6f;
+}
+
+.price-tag__price sup {
+  font-weight: 500;
+  vertical-align: super;
+  font-size: 16px;
+  margin-right: 0.5rem;
+}
+
+.price-tag__price b {
+  font-size: 43px;
+  color: #4f4f6f;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.price-tag__description {
+  width: 296px;
+  height: 127px;
+  margin-top: 48px;
+  color: #9fa4af;
+}
+
+.price-tag__button {
+  width: 190px;
+  height: 50px;
+  margin-top: 55px;
+  margin-bottom: 66px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #c2c9db;
+  border: solid 1px #d7dbe8;
+  -webkit-box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+          box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+  background-color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.price-tag__button:hover {
+  background-color: #6e45e2;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

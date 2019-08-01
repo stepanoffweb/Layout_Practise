@@ -1,0 +1,103 @@
+.table {
+    // height: 100vh;
+    padding-top: 120px;
+    background-color: $pale-grey;
+    text-align: center;
+    &-header {
+        @include flexbox();
+        &__subtitle {
+            margin-bottom: 2.5rem;
+            color: $cool-grey;
+            @include lines(#6e45e2);
+        }
+        &__title {
+            margin-bottom: 40px;
+            font-family: 'Maven Pro';
+            font-size: 6rem;
+            font-weight: 500;
+            color: #4f4f6f;
+        }
+        &__description {
+            width: 375px;
+            margin-bottom: 100px;
+            color: $cool-grey;
+        }
+    }
+}
+.price {
+    &-tags {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 340px;
+    }
+    &-tag {
+        @include flexbox();
+        justify-content: flex-start;
+        width: 440px;
+        border-radius: 30px;
+        border: solid 1px #d7dbe8;
+        background-color: #ffffff;
+        &:nth-child(2) {margin: 0 50px;}
+        transition: .2s;
+        &:hover {
+            box-shadow: 0 0 81.9px 10.1px rgba(204, 204, 223, 0.71);
+        }
+        &__img {
+            height: 110px;
+            margin-top: 60px;
+        }
+        &__title {
+            margin-top: 53px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $cool-grey;
+        }
+        &__price {
+            font-size: 18.5px;
+            margin-top: 28px;
+            &, sup {
+                font-weight: 500;
+                color: #4f4f6f;
+
+            }
+            sup {
+                font-weight: 500;
+                vertical-align: super;
+                font-size: 16px;
+                margin-right: 0.5rem;
+             }
+             b {
+                font-size: 43px;
+                color: #4f4f6f;
+                font-style: normal;
+                font-weight: 900;
+            }
+        }
+        &__description {
+            width: 296px;
+            height: 127px;
+            margin-top: 48px;
+            color: $cool-grey;
+        }
+        &__button {
+            width: 190px;
+            height: 50px;
+            margin-top: 55px;
+            margin-bottom: 66px;
+            border-radius: 50px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #c2c9db;
+            border: solid 1px #d7dbe8;
+            box-shadow: 0 0 18.7px 2.3px rgba(204, 204, 223, 0.5);
+            background-color: #fff;
+            transition:  .2s;
+            &:hover {
+                background-color: #6e45e2;
+                cursor: pointer;
+            }
+        }
+    }
+}
