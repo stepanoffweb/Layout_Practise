@@ -1,6 +1,7 @@
 
 .main {
     padding-top: 50px;
+    // transparent image does top and the gradient goes under it
     background: url(../img/bg1.png) no-repeat 0% 65%/cover, linear-gradient(300deg, #88d3ce, #6e45e2);
     &-text {
         @include flexbox();
@@ -26,22 +27,23 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
     margin: auto;
     margin-bottom: 180px;
 }
 .logo {
+    &__img {
+        vertical-align: middle;
+    }
     &__text {
         color: #fff;
         font-size: 3rem;
         letter-spacing: 6px;
         font-family: 'Maven Pro', sans-serif;
-        font-weight: 700;
+        font-weight: 900;
         vertical-align: middle;
         margin-left: 17px;
-    }
-    &__img {
-        vertical-align: middle;
     }
 }
 .menu {
@@ -58,10 +60,11 @@
 }
 .btn {
     border: 1px solid #fff;
-    border-radius: 100px;
+    border-radius: 250px;
     padding: 19px 33px;
     margin-left: 50px;
     font-size: 1.2rem;
+    font-weight: 900;
     text-transform: uppercase;
 }
 .arrow {
@@ -79,4 +82,7 @@
         line-height: 64px;
         text-align: center;
     }
+}
+.m-menu-link  {
+    display: none;
 }
