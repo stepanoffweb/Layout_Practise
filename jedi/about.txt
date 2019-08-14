@@ -1,6 +1,0 @@
-- bootstrap
-- flex
-- owl carousel
-- photorama
-- form (email push)
-- Yandex maps API
