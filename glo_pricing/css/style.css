@@ -536,6 +536,14 @@ hr {
 .close-menu:hover {
   cursor: pointer;
 }
+.fa:before {
+	display: inline-block;
+    font: normal normal normal 24px/1 FontAwesome;
+	color: #4f4f6f;
+    font-size: 22px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
 
 @media (max-width: 1199px) {
   html {

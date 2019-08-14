@@ -63,7 +63,30 @@ Temporary Items
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/assets
+**/dist/*
+**/references-dj7
+**/assets
 *.psd
+
+/dist/
+/.git/
+/app/css/
+/**/_backstage
+/**/package-lock.json
+#---------------------------------------
 #gulpfile.js
+#ак исключить вложенную папку через одну?
+#admin/*
+#!admin/modules/name/
+#Не работает.
+#1) исключаем папку
+#admin/*
+#2) игнорируем исключением дочки
+#!admin/modules/
+#3) исключаем содержимое дочки
+#admin/modules/*
+#4) игнорируем исключение дочки
+#!admin/modules/name/
+
+#С версией 1.8.2 из git вы также можете использовать подстановочный знак ** для соответствия любому уровню подкаталогов:
+#**/bin/Debug/
