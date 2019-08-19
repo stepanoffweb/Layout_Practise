@@ -50,6 +50,13 @@ body {
 			border-color: green;
 		}
 	}
+	&.ishome {
+		 .site-header {
+			min-height: 700px;
+			height: 100vh;
+			background-color: $dark;
+		}
+	}
 }
 
 .img-responsive {
