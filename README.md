@@ -1,7 +1,7 @@
 # Layout_Practise
   This repo is a collection of my training sites.
 
-## LandingPage_skinali
+## LandingPage_skinali (skinali branch)
 
   Simple example of a landing page with header, footer and 12 sections from Glo Academy. It has a combined slider (slick
 and twentytwenty jQuery libs) and Spikme widget.
