@@ -1,3 +1,3 @@
-# Css_NewYear (new_year branch)
+# FirstPortfolio (first_portfolio branch)
 
-Training with CSS3 properties as 'transform-style: preserve-3d', 'backface-visibility: hidden' and JS prosessing coordinates of cursor position.
+Simple 3-sections layout with WOW and Animation libs.
