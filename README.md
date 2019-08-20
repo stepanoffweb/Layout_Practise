@@ -4,6 +4,9 @@
 ## FirstPortfolio (first_portfolio branch):
   Simple 3-sections layout with WOW and Animation libs.
   
+## Glo_pricing (glo_pricing branch):
+  Simple 3-screens adaptive page on flexbox technology.
+  
 ## Css_NewYear (new_year branch):
   Training with CSS3 properties as 'transform-style: preserve-3d', 'backface-visibility: hidden' and JS prosessing coordinates of cursor position.
 
