@@ -1,10 +1,13 @@
 # Layout_Practise
   This repo is a collection of my training sites.
   
-## FirstPortfolio (first_portfolio branch)
+## FirstPortfolio (first_portfolio branch):
   Simple 3-sections layout with WOW and Animation libs.
+  
+## Css_NewYear (new_year branch):
+  Training with CSS3 properties as 'transform-style: preserve-3d', 'backface-visibility: hidden' and JS prosessing coordinates of cursor position.
 
-## LandingPage_skinali (skinali branch)
+## LandingPage_skinali (skinali branch):
   Simple example of a landing page with header, footer and 12 sections from Glo Academy. It has a combined slider (slick
 and twentytwenty jQuery libs) and Spikme widget.
      You can touch the site on [address](http://u55180.onhh.ru) anytime you want :wink:
