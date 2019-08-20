@@ -1,2 +1,2 @@
 # Glo_pricing (glo_pricing branch):
-  Simple 3-screens page on flexbox technology.
+  Simple 3-screens adaptive page on flexbox technology.
