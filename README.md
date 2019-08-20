@@ -1,5 +1,5 @@
 # Layout_Practise
-  This repo is a collection of my training sites.
+  This repo is a collection of sites.
   
 ## FirstPortfolio (first_portfolio branch):
   Simple 3-sections layout with WOW and Animation libs.
