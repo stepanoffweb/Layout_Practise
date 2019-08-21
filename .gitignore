@@ -16,14 +16,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
 # =========================
 # Operating System Files
 # =========================
-
 # OSX
 # =========================
-
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -42,9 +39,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 # dependencies
-/node_modules
+**/node_modules
+
 /.pnp
 .pnp.js
 
@@ -53,6 +50,8 @@ Temporary Items
 
 # production
 /build
+/dist/
+**/css/
 
 # misc
 .env.local
@@ -66,27 +65,7 @@ yarn-error.log*
 **/dist/*
 **/references-dj7
 **/assets
-*.psd
+**/*.psd
 
-/dist/
-/.git/
-/app/css/
 /**/_backstage
 /**/package-lock.json
-#---------------------------------------
-#gulpfile.js
-#ак исключить вложенную папку через одну?
-#admin/*
-#!admin/modules/name/
-#Не работает.
-#1) исключаем папку
-#admin/*
-#2) игнорируем исключением дочки
-#!admin/modules/
-#3) исключаем содержимое дочки
-#admin/modules/*
-#4) игнорируем исключение дочки
-#!admin/modules/name/
-
-#С версией 1.8.2 из git вы также можете использовать подстановочный знак ** для соответствия любому уровню подкаталогов:
-#**/bin/Debug/

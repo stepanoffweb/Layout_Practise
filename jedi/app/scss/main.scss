@@ -99,13 +99,13 @@ section {
 	top: 34px;
 	.hamburger-box {
 		width: 34px;
-		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
-			border-radius: 0;
-			width: 34px;
-			height: 2px;
-			background-color: #fff;
-		}
 	}
+}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+	border-radius: 0;
+	width: 34px;
+	height: 2px;
+	background-color: #fff;
 }
 .img-responsive {
 	display: block;

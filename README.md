@@ -1,3 +1,4 @@
+
 # Layout_Practise
   This repo is a collection of sites.
   
@@ -19,3 +20,7 @@ and twentytwenty jQuery libs) and Spikme widget.
     * join and squeeze javascript files;
     * pick up font format which is suted to the browser
     * pick up image format which is suted to the browser
+
+# Jedi_Mitler
+Moderate complexity site with jQuery libs: css-hamburger, mmenu, fotorama, owl.carousel.
+
