@@ -1,0 +1,169 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::-webkit-input-placeholder {
+	color: #666;
+}
+
+::-moz-placeholder {
+	color: #666;
+}
+
+:-ms-input-placeholder {
+	color: #666;
+}
+
+::-ms-input-placeholder {
+	color: #666;
+}
+
+::placeholder {
+	color: #666;
+}
+
+::-moz-selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+	&.ishome {
+		.site-header {
+			min-height: 700px;
+			height: 100vh;
+			background-color: $dark;
+		}
+		.top-line {
+			padding-top: 40px;
+			position: absolute;
+			width: 100%;
+			z-index: 1;
+		}
+	}
+}
+.logo {
+	img {
+		width: 125px;
+		height: auto; /* for old iPhones*/
+		margin-left: 45px;
+	}
+}
+.phone {
+	position: absolute;
+	right: 85px;
+	top: 44px;
+	font-family: firasans-me;
+	font-size: 22px;
+	white-space: nowrap;
+	color: #fff;
+	.fa {
+			color: #555;
+			font-size: 22px;
+			margin-right: 6px;
+		}
+}
+section, header {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+section {
+	background-color: #fff;
+}
+.hamburger {
+	position: absolute;
+	right: 0;
+	top: 34px;
+	.hamburger-box {
+		width: 34px;
+	}
+}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+	border-radius: 0;
+	width: 34px;
+	height: 2px;
+	background-color: #fff;
+}
+.mm-navbar {
+	text-align: center;
+  border-bottom-width: 0px;
+	&__title img {
+		width: 128px;
+		height: auto;
+	}
+}
+/*безуспешная попытка устранить рывок при свертывании панели*/
+html.mm-wrapper_opened {
+	 /* *//* overflow-y: scroll;*//**/
+}
+.mm-menu_opened .mm-panel {
+	 left: 18px;
+}
+/*--------------------------------------------------------*/
+.mm-listitem_selected>.mm-listitem__text {
+	background: rgba(255, 255,255, .15);
+	color: $accent !important;
+}
+.mm-listitem:after {
+	border-bottom: 0;
+}
+.mm-panel li > a{
+	transition: color .25s ease;
+	&:hover {
+		color: $accent !important;
+		&::before {
+			color: $accent;
+		}
+	}
+	&::before {
+		content: '\f219';
+		margin-right: 8px;
+		font-family: fontawesome;
+		font-size: 12px;
+		color: #fff;
+		transition: color .25s ease;
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 1280px;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+.text-center {
+	text-align: center;
+}
+b, strong {
+	font-weight: bold;
+}
+
+
+
+
+@import "media"; /* Always at the end*/
