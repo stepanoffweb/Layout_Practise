@@ -1,15 +1,22 @@
 $(function() {
 
 	$('#my-menu').mmenu({
-        extentions: ['theme-black', 'effect-menu-slide', 'pagedim-black', 'position-right'],
+        extensions: ['widescreen', 'pagedim-black', 'theme-black',  'position-right', 'fx-menu-slide'],
         navbar: {
-            title: '<img srsc="img/logo-1.svg" alt="Салон красоты Митлер">'
+            title: '<img src="img/logo-1.svg" alt="Салон красоты Митлер">'
         }
     });
 
-    var api = $("#my-menu").data( "mmenu" );
+    let menu = new Mmenu('#my-menu');
+    let api = menu.API;
+    console.log("menu ", menu);
+    console.log("api ", api);
 
-    api.bind('open:start', function(){
+    api.bind('open:finish', function() {
         $('.hamburger').addClass('is-active');
     });
+  api.bind('close:finish', function() {
+        $('.hamburger').removeClass('is-active');
+    });
+
 });

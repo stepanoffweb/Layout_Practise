@@ -82,7 +82,7 @@ body {
 	.fa {
 			color: #555;
 			font-size: 22px;
-			margin-right: 3px;
+			margin-right: 6px;
 		}
 }
 section, header {
@@ -107,6 +107,47 @@ section {
 	height: 2px;
 	background-color: #fff;
 }
+.mm-navbar {
+	text-align: center;
+  border-bottom-width: 0px;
+	&__title img {
+		width: 128px;
+		height: auto;
+	}
+}
+/*безуспешная попытка устранить рывок при свертывании панели*/
+html.mm-wrapper_opened {
+	 /* *//* overflow-y: scroll;*//**/
+}
+.mm-menu_opened .mm-panel {
+	 left: 18px;
+}
+/*--------------------------------------------------------*/
+.mm-listitem_selected>.mm-listitem__text {
+	background: rgba(255, 255,255, .15);
+	color: $accent !important;
+}
+.mm-listitem:after {
+	border-bottom: 0;
+}
+.mm-panel li > a{
+	transition: color .25s ease;
+	&:hover {
+		color: $accent !important;
+		&::before {
+			color: $accent;
+		}
+	}
+	&::before {
+		content: '\f219';
+		margin-right: 8px;
+		font-family: fontawesome;
+		font-size: 12px;
+		color: #fff;
+		transition: color .25s ease;
+	}
+}
+
 .img-responsive {
 	display: block;
 	max-width: 1280px;
