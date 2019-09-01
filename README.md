@@ -20,5 +20,5 @@ and twentytwenty jQuery libs) and Spikme widget.
     * pick up font format which is suted to the browser
     * pick up image format which is suted to the browser
 ## Jedi_Mitler
-	Of moderate complexity site with jQuery libs: css-hamburger, mmenu, fotorama, owl.carousel.
+Of moderate complexity site with jQuery libs: css-hamburger, mmenu, fotorama, owl.carousel.
 
