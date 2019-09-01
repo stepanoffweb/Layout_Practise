@@ -51,7 +51,7 @@ Temporary Items
 # production
 /build
 /dist/
-**/css/
+
 
 # misc
 .env.local
