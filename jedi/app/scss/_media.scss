@@ -12,6 +12,12 @@
     .carousel-services-item{
         flex-direction: column;
     }
+    .s{
+        &-review, &-partners, &-king{
+            padding: 8% 0;
+            font-size: 16px;
+        }
+    }
 }
 
 
@@ -32,6 +38,11 @@
             display: inline;
             margin-bottom: 8px;
             margin-left: 18px;
+        }
+    }
+    .s{
+        &-review, &-partners, &-king{
+            font-size: 14px;
         }
     }
 }
