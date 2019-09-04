@@ -48,6 +48,7 @@ gulp.task('scripts', function() {
 		'app/libs/mmenu/js/mmenu.js',
 		'app/libs/owl.carousel/owl.carousel.min.js',
 		'app/libs/equalHeights/equalheights.js',
+		'app/libs/fotorama/fotorama.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
