@@ -1,35 +1,36 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-
+/* opacity - for mobile devices*/
 ::-webkit-input-placeholder {
-	color: #666;
+	opacity: 1;
+	color: #fff;
 }
 
 ::-moz-placeholder {
-	color: #666;
+	opacity: 1;
+	color: #fff;
 }
 
 :-ms-input-placeholder {
-	color: #666;
+	color: #fff;
 }
 
 ::-ms-input-placeholder {
-	color: #666;
+	color: #fff;
 }
 
 ::placeholder {
-	color: #666;
+	opacity: 1;
+	color: #fff;
 }
 
 ::-moz-selection {
 	background-color: $accent;
-	color: #fff;
 }
 
 ::selection {
 	background-color: $accent;
-	color: #fff;
 }
 
 body {
@@ -42,14 +43,12 @@ body {
 	color: #fff;
 	opacity: 1;
 	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
+		/* &:focus:required:invalid {*/
+		/* 	border-color: red;*/
+		/* }*/
+		/* &:required:valid {*/
+		/* 	border-color: green;*/
+		/* }*/
 	}
 	&.ishome {
 		.site-header {
@@ -110,6 +109,69 @@ ul, li {
 b, strong {
 	font-weight: bold;
 }
+/* fallback for selectize plagin*/
+input, textarea, select,
+.selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active{
+	width: 100%;
+	margin-top: 17px;
+	background-color: transparent;
+	border: 1px solid rgba(#000, .1);
+	border-bottom: 2px solid rgba(#000, .1);
+	border-radius: 2px;
+	padding: 8px 22px;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+}
+.selectize-control .selectize-input{
+	box-shadow: none;
+	overflow: inherit;
+	line-height: inherit;
+	text-align: left;
+	input{
+		font-size: inherit;
+		&.dropdown-active::before{
+			background-color: transparent;
+		}
+	}
+}
+.selectize-control.single{
+	.selectize-input, &.dropdown-active{
+		&::after{
+			border: none; /* убрали стрелку от плагина*/
+			content: '\f107';
+			font-family: fontawesome;
+			position: absolute;
+			right: 30px;
+			top: 12px;
+		}
+		&.dropdown-active::after{
+			content: '\f106';
+		}
+	}
+}
+.selectize-dropdown{
+	font-size: 15px;
+	border-radius: 0;
+	border: 0;
+	text-align: left;
+	&-content{
+		.option{
+			padding: 10px 22px;
+			&.active{
+				background-color: lighten($accent, 15);
+			}
+		}
+	}
+}
+select{
+	padding: 10px 22px;
+	option{
+		color: #333;
+	}
+}
+/* --------end of fallback*/
 a{
 	text-decoration: none;
 	color: #fff;
@@ -509,9 +571,28 @@ $colors: $blue, $red, $accent;
 
 .s{
 	&-review, &-partners, &-king{
-		padding: 5% 0px;
+		padding: 5% 0;
+	}
+	&-king{
 		p{
 			margin: 30px 0;
+			font-size: 18px;
+		}
+	}
+	&-call{
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 10%;
+		&::before{
+			position: absolute;
+			content: '';
+			width: 50%;
+			height: 100%;
+			right: 0;
+			background-color: rgba($accent, .92);
+		}
+		&.inverse{
+			background-color: #fff;
 		}
 	}
 }
@@ -560,7 +641,52 @@ $colors: $blue, $red, $accent;
 		}
 	}
 }
-
+.success{
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/* display: flex; add with script*/
+	background-color: transparent;
+	text-transform: uppercase;
+	font-weight: bold;
+	z-index: 10;
+	span{
+		margin: auto;
+	}
+	&~*{
+		transition: all .5s ease;
+	}
+	&.active{
+		&~*{
+			opacity: .5;
+			-webkit-filter: blur(10px);
+			        filter: blur(10px);
+		}
+	}
+}
+.callback{
+	padding: 15%;
+	position: relative;
+	&-logo{
+		img{
+			width: 100px;
+			height: auto;
+		}
+	}
+	.form-title{
+		margin: 0;
+		font-size: 30px;
+		p{
+			margin-top: 0;
+		}
+	}
+	.button{
+		margin-top: 40px;
+	}
+}
 
 @import "media";
  /* Always at the end*/

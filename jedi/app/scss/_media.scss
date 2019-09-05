@@ -17,6 +17,9 @@
             padding: 8% 0;
             font-size: 16px;
         }
+        &-call{
+            background-size: cover;
+        }
     }
 }
 
@@ -26,6 +29,14 @@
         .h1{
             font-size:  48px;
         }
+    }
+    .s-call{
+        &::before{
+            width: 100%;
+        }
+    }
+    .callback{
+        padding: 12% 0;
     }
 }
 

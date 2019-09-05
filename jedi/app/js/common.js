@@ -60,10 +60,33 @@ $(function() {
         ths.html(ths.html().replace(/^(\S+)/, '<span>$1</span>'));
     });
 
+    $('select').selectize({
+        create: true
+    });
+
+    //E-mail Ajax Send
+    $("form.callback").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "/mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            $(th).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+            // alert("Thank you!");
+            setTimeout(function() {
+                $(th).find('.success').removeClass('active').fadeOut();
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
+
     function onResize() {
         $('.carousel-services-content').equalHeights();
     }
-        onResize();
     // window.onResize(function() {
     // });
     onResize();
