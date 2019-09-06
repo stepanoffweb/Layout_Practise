@@ -243,6 +243,10 @@ a{
   	}
   }
 }
+/* методика атомарной верстки, когда за каждое свойство элемента отвечает отдельный класс*/
+.text-center{
+	/* text-align: center;*/
+}
 .logo {
 	img {
 		width: 125px;
@@ -687,6 +691,85 @@ $colors: $blue, $red, $accent;
 		margin-top: 40px;
 	}
 }
+.reviews{
+	text-align: center;
+	.owl-dots{
+		width: 100%;
+		text-align: center;
+		margin-top: 60px;
+		.owl-dot{
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			border-radius: 50%;
+			display: inline-block;
+			margin: 4px;
+			transition: background-color .4s ease, -webkit-transform .4s ease;
+			transition: transform .4s ease, background-color .4s ease;
+			transition: transform .4s ease, background-color .4s ease, -webkit-transform .4s ease;
+			&.active{
+				background-color: $accent;
+				-webkit-transform: scale(1.2);
+				        transform: scale(1.2);
+			}
+		}
+	}
+}
+.review{
+	margin-top: 20px;
+	&-header{
+		font-family: 'Times New Roman', serif;
+		font-style: italic;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	&-date{
+		/* margin-top: 2px;*/
+		font-family: 'Times New Roman', serif;
+		font-style: italic;
+		font-size: 16px;
+		color: #888;
+	}
+	&-stars{
+		margin: 18px 0 35px;
+		font-size: 14px;
+		color: $accent;
+		.fa{
+			margin: 0 2px;
+		}
+	}
+	&-text{
+		color: #95989a;
+		font-weight: 300;
+	}
+}
+.quotes{
+	position: absolute;
+	width: 100%;
+	&::before, &::after{
+		display: block;
+		position: absolute;
+		content:',,';
+		font-size: 56px;
+		font-weight: bold;
+		line-height: 0;
+		color: $accent;
+		font-family: 'Times New Roman', serif;
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+	&::before{
+		left: -60px;
+		top: 150px;
+	}
+	&::after{
+		right: -35px;
+		top: 115px;
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+	}
+}
+
 
 @import "media";
  /* Always at the end*/

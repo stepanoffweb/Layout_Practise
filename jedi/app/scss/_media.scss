@@ -51,10 +51,16 @@
             margin-left: 18px;
         }
     }
+    .button{
+        padding: 12px 36px;
+    }
     .s{
         &-review, &-partners, &-king{
             font-size: 14px;
         }
+    }
+    .quotes{
+        display: none;
     }
 }
 
