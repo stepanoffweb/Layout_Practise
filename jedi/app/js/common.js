@@ -58,6 +58,31 @@ $(function() {
         smartSpeed: 700,
         autoHeights: true
     });
+    $('.partners').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        // items: 1,
+        smartSpeed: 700,
+        nav: true,
+        navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+            1200: {
+                items: 4
+            },
+        },
+
+    });
 
     $('.carousel-services-composition .h3').each(function() {
         let ths = $(this);
@@ -91,6 +116,17 @@ $(function() {
         return false;
     });
 
+    $(window).scroll(function(){
+        if($(this).scrollTop() > $(this).height()) {
+            $('.top').addClass('active');
+        } else {
+            $('.top').removeClass('active');
+        }
+    });
+
+    $('.top').click(function(){
+        $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
+    });
 
     function onResize() {
         $('.carousel-services-content').equalHeights();
@@ -99,6 +135,9 @@ $(function() {
     // });
     onResize();
 
+    $(window).on('load', function() {
+        $('.preloader').delay(1000).fadeOut('slow');
+    });
 
 
 });
