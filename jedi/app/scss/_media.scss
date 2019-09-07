@@ -21,6 +21,9 @@
             background-size: cover;
         }
     }
+    .footer-social .social li{
+        margin: 0;
+    }
 }
 
 
@@ -37,6 +40,17 @@
     }
     .callback{
         padding: 12% 0;
+    }
+    .footer{
+        &-phone{
+            font-size: 24px;
+        }
+        &-nav{
+            padding-left: 0;
+        }
+        &-social .social li{
+            margin: 3px;
+        }
     }
 }
 
@@ -58,9 +72,34 @@
         &-review, &-partners, &-king{
             font-size: 14px;
         }
+        &-partners{
+            .h2{
+                margin: 0;
+            }
+        }
     }
     .quotes{
         display: none;
+    }
+    .partners{
+        owl-nav{
+            > div{
+                &.owl-prev{
+                    left: 0;
+                }
+                &.owl-next{
+                    right: 0;
+                }
+            }
+        }
+    }
+    .footer{
+        &-add{
+            margin-bottom: 10px;
+        }
+        &-social{
+            margin-top: 0;
+        }
     }
 }
 
@@ -75,6 +114,9 @@
         .phone{
             left: 40px;
         }
+    }
+    .footer-nav{
+        padding-left: 20px;
     }
 }
 @media only screen and (max-width: 480px){
