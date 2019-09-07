@@ -51,6 +51,8 @@ Temporary Items
 # production
 /build
 /dist/
+/jedi/app/js/scripts.min.js
+/jedi/app/css/*
 
 
 # misc
