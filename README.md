@@ -20,4 +20,4 @@ and twentytwenty jQuery libs) and Spikme widget.
     * pick up font format which is suted to the browser
     * pick up image format which is suted to the browser
 ## Jedi_Mitler
-Of moderate complexity site with jQuery libs:'mmenu', 'fotorama', 'owl.carousel' and with css-library  'css-hamburger'.
+Of moderate complexity site with form (emailPush), Yandex maps API, on the Bootstrap4 and jQuery libs:'mmenu', 'fotorama', 'owl.carousel' and with css-library  'css-hamburger'.
