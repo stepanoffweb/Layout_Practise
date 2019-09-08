@@ -746,7 +746,7 @@ $colors: $blue, $red, $accent;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	/* display: flex; add with script*/
+	/* display: flex; - add with script*/
 	background-color: transparent;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -997,7 +997,7 @@ $colors: $blue, $red, $accent;
 		font-family: fontawesome;
 		font-size: 26px;
 		.fa{
-			top: 15px;
+			top: 10px;
 			font-size: 22px;
 			left: 2px;
 		}
