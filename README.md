@@ -1,5 +1,5 @@
 # Layout_Practise
-  This repo is a collection of sites. To see separate project just go to it branch and follow the instruction.
+  This repo is a collection of sites. To see separate project just go to it's branch and follow the instruction.
   
 ## FirstPortfolio (first_portfolio branch):
   Simple 3-sections layout with WOW and Animation libs.
