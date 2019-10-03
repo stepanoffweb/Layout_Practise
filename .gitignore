@@ -66,10 +66,10 @@ yarn-debug.log*
 yarn-error.log*
 **/dist/*
 **/references-dj7
-**/assets
 **/*.psd
 **/*.txt
 **/*.pdf
+**/lesson_ovk/
 
 /**/_backstage
 /**/package-lock.json
