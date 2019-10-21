@@ -70,6 +70,7 @@ yarn-error.log*
 **/*.txt
 **/*.pdf
 **/lesson_ovk/
+**/*.fig
 
 /**/_backstage
 /**/package-lock.json
