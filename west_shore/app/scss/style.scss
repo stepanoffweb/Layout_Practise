@@ -26,8 +26,6 @@
             right: 80px;
             bottom: 116px;
             text-align: right;
-            text-transform: uppercase;
-            color: #fff;
             &-subtitle {
                 margin-bottom: 5px;
             }
@@ -57,7 +55,6 @@
       bottom: 36px;
       max-width: 920px;
       width: 100%;
-      color: #fff;
       .slick-current {
         .dots-box {
           border-top: 4px solid $green;
@@ -85,6 +82,7 @@
   &__name {
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -106,8 +104,6 @@
   font-weight: 800;
   font-size: 200px;
   line-height: 156px;
-  text-transform: uppercase;
-  color: #fff;
   opacity: 0.07;
   max-width: 467px;
 }
@@ -119,7 +115,6 @@
   border-right: 1px solid rgba(#fff, .25);
   height: 100%;
   text-align: center;
-  color: #fff;
   z-index: 5;
   }
   &__search {
@@ -145,6 +140,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1.05px;
+    text-transform: capitalize;
     position: relative;
     padding-left: 19px;
     &::before {
@@ -179,7 +175,7 @@
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 3px;
-      color: #fff;
+      text-transform: capitalize;
     }
   }
 }

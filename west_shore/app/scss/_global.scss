@@ -1,7 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
 }
 ul,
 li {
@@ -12,17 +24,17 @@ li {
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
     cursor: pointer;
 }
 
-.subtitle-left {
+.headline-left {
     display: inline-block;
     font-family: Fira Sans;
     font-size: 22px;
     line-height: 32px;
     text-align: right;
     letter-spacing: 7.33333px;
-    text-transform: uppercase;
     color: #FFFFFF;
     opacity: 0.5;
     padding-left: 103px;
