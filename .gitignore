@@ -65,11 +65,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-**/references-dj7
+**/references
 **/*.psd
 **/*.txt
 **/*.pdf
-**/lesson_ovk/
 **/*.fig
 
 /**/_backstage
