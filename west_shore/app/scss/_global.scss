@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -15,43 +16,71 @@ body {
     color: #fff;
     text-transform: uppercase;
 }
+
 ul,
 li {
-      margin: 0;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
+
 a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
     cursor: pointer;
 }
+
 h3 {
     margin: 0;
 }
 
-.headline-left {
-    display: inline-block;
-    font-family: Fira Sans;
-    font-size: 22px;
-    line-height: 32px;
-    text-align: right;
-    letter-spacing: 7.33333px;
-    color: #FFFFFF;
-    opacity: 0.5;
-    padding-left: 103px;
-    position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        height: 1px;
-        width: 80px;
-        background-color: #fff;
-        left: 0;
-        top: 50%;
+.headline {
+    &-left {
+        display: inline-block;
+        font-family: Fira Sans;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 7.33333px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        padding-left: 103px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 80px;
+            background-color: #fff;
+            left: 0;
+            top: 50%;
+        }
+    }
+    &-right {
+        display: inline-block;
+        font-family: Fira Sans;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 7.33333px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        padding-right: 103px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 80px;
+            background-color: #fff;
+            right: 0;
+            top: 50%;
+        }
     }
 }
+
 .title {
     span {
         display: inline-block;
@@ -60,12 +89,14 @@ h3 {
         color: rgba(#fff, 0.02);
         position: relative;
         transform: translateX(-50px);
+
         h3 {
             position: absolute;
             top: 0;
             right: -5px;
             color: #fff;
             font-size: 80px;
+
             &::after {
                 position: absolute;
                 content: '';
@@ -78,13 +109,16 @@ h3 {
         }
     }
 }
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
 }
+
 .subtitle {
     display: inline-block;
     text-align: right;
+
     &__head {
         padding-right: 10px;
         font-weight: 800;
@@ -94,6 +128,18 @@ h3 {
         }
     }
 }
+
+.descr {
+    display: inline-block;
+    &-head {
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
 .btn {
     font-weight: 800;
     font-size: 40px;
@@ -114,6 +160,7 @@ h3 {
             top: 50%;
             left: -10px;
         }
+
         &::after {
             content: '';
             position: absolute;
@@ -125,4 +172,13 @@ h3 {
             transform: translateY(-50%);
         }
     }
+}
+
+.surf,
+.travel {
+    padding: 130px 0 120px;
+
+}
+.travel {
+    padding-bottom: 265px;
 }

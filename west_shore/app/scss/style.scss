@@ -213,7 +213,6 @@
 }
 
 .surf {
-    padding: 130px 0 120px;
     background-image: url(../img/surf-bg.png);
     @extend %bg-img;
     background-position: right 190px;
@@ -472,7 +471,90 @@
   }
 }
 
-
+.travel {
+  background-image: url(../img/travel-bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  .slider-arrows {
+    top: 225px;
+    opacity: .5;
+  }
+  &-slider {
+    &__head {
+      @extend %bg-img;
+      background-position: top left;
+      background-size: contain;
+      min-height: 780px;
+    }
+    &__subtitle {
+      text-align: right;
+      padding: 132px 80px 0 0;
+    }
+    &__descr {
+      min-height: 320px;
+      margin-top: -270px;
+      padding: 160px 0 0 132px;
+      @extend %bg-img;
+      background-size: contain;
+      background-position: right center;
+      img {
+        padding-left: 24px;
+      }
+      .descr-head {
+        position: relative;
+        padding-right: 78px;
+        img {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+    &__btn {
+      text-align: center;
+    }
+    &__info {
+      display: flex;
+      justify-content: space-around;
+        margin-bottom: 66px;
+      &-item {
+        min-height: 200px;
+        position: relative;
+      }
+      &-subtitle {
+        position: absolute;
+        top: 97px;
+        left: -135px;
+        width: 200px;
+        height: 0;
+        font-size: 18px;
+        letter-spacing: 8px;
+        line-height: 22px;
+        white-space: nowrap;
+        opacity: .5;
+        text-align: right;
+        transform: rotate(-90deg);
+      }
+      &-title {
+        position: relative;
+        width: 242px;
+        font-size: 40px;
+        line-height: 36px;
+        font-weight: 800;
+        span {
+          position: absolute;
+          right: 40px;
+          bottom: -33px;
+          font-size: 14px;
+          line-height: 36px;
+          letter-spacing: 5.25px;
+          font-weight: 400;
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+}
 
 
 

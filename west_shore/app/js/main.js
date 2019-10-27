@@ -28,6 +28,14 @@ $(function(){
         arrows: false,
         focusOnSelect: true
     });
+    $('.travel__slider').slick({
+        infinite: true,
+        fade: true,
+        slidesToShow: 1,
+        slidesTOScroll: 1,
+       prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="previous item">',
+       nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="next item">'
+    });
 
 
 });
