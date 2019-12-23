@@ -1,5 +1,5 @@
 function timer() {
-    let deadline = '2019-12-01',
+    let deadline = '2020-12-01',
 
         getTimeRemain = (endtime) => {
             let now = new Date(),

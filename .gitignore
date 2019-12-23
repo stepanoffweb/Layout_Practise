@@ -50,10 +50,10 @@ Temporary Items
 
 # production
 /build
-/dist/
+**/references/
 /jedi/app/js/scripts.min.js
 /jedi/app/css/*
-
+yoga/dist
 
 # misc
 .env.local
@@ -64,12 +64,12 @@ Temporary Items
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-**/dist/*
-**/references-dj7
+
 **/*.psd
 **/*.txt
 **/*.pdf
-**/lesson_ovk/
+**/ovk/
+**/investstroy
 **/*.fig
 
 /**/_backstage

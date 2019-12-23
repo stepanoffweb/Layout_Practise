@@ -896,6 +896,7 @@ header ul li:before {
 
     .content .counter-title {
         font-size: 28px;
+        margin-left: 50px;
     }
 
     .content .counter-block-option {
