@@ -1,5 +1,5 @@
 // TIMER
-let deadline = '2019-12-29',
+let deadline = '2020-12-29',
 	// calculates time to the end and return the object with separated values of time units
     getTimeRemain = (endtime) => {
         let now = Date.now(),
@@ -147,7 +147,7 @@ imgs.addEventListener('click', function (event) {
 
 // TABS WINDOWS
 let tabsBlock = document.querySelector('.glazing_slider'),
-    tabs = document.querySelectorAll('.glazing_slider .glazing_block'),
+    tabs = document.querySelectorAll('.glazing_block'),
 	tabContent = document.querySelectorAll('.glazing .row');
 
 let hideTabs = () => {
@@ -165,25 +165,31 @@ hideTabs();
 tabContent[0].style.display = 'block';
 tabs[0].querySelector('a').classList.add('active');
 
-let showTabContent = (b, tab) => {
-    tabContent[b].style.display = 'block';
+let showTabContent = (index, tab) => {
+    tabContent[index].style.display = 'block';
     tab.classList.add('active');
 };
 
 tabsBlock.addEventListener('click', function (event) {
     event.preventDefault();
-	let target = event.target;
+    let target = event.target;
+    console.log('target= ', target)
 	while (target != this) {
-		if (target && target.classList.contains('glazing_block')) {
+        if (target && target.classList.contains('glazing_block')) {
+            hideTabs();
 			for (let i = 0; i < tabs.length; i++) {
-				if (target == tabs[i]) {
-					hideTabs();
+                if (target == tabs[i]) {
+                    console.log('targetA', target.querySelector('a'));
+                    console.log('beforeShow', tabs[0].querySelector('a'));
 					showTabContent(i, target.querySelector('a'));
+                    console.log('afterShow', tabs[0].querySelector('a'));
 					break;
 				}
-			}
+            }
+            break;
 		}
 		target = target.parentNode;
+        console.log('targetParent= ', target)
 	}
 });
 // TABS DECORATION

@@ -18,7 +18,7 @@ $(document).ready(function() {
                 slidesToShow: 3,
                 prevArrow: '<button class="prev arrow"></button>',
                 nextArrow: '<button class="next arrow"></button>',
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         }, {
             breakpoint: 768,
@@ -56,7 +56,7 @@ $(document).ready(function() {
                 slidesToShow: 2,
                 prevArrow: '<button class="prev arrow"></button>',
                 nextArrow: '<button class="next arrow"></button>',
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         }, {
             breakpoint: 768,

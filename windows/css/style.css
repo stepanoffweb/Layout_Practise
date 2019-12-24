@@ -307,6 +307,7 @@ textarea:focus {
 }
 .glazing_block {
   display: inline-block;
+  outline: none;
 }
 .glazing_block img {
   display: block;
@@ -314,6 +315,7 @@ textarea:focus {
   margin-bottom: 2rem;
 }
 .glazing_block a {
+  border: none;
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: underline;
@@ -431,6 +433,7 @@ textarea:focus {
 }
 .decoration_item {
   text-align: center;
+  outline: none;
 }
 .decoration_item a {
   font-size: 2rem;
