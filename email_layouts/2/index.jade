@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="css/style.css")
+    meta(chrset="utf-8")
+
+  body
+    .email-container
+      .email-header
+        .email-center
+
+          a.email-logo(href="//site.com")
+            img(src="img/logo.png", alt="logo")
+          .email-social-wrapper
+            a(href="#")
+              img(src="img/twitter.png", alt="twitter")
+            a(href="#")
+              img(src="img/vk.png", alt="vkontakte")
+            a(href="#")
+              img(src="img/fb.png", alt="facebook")
+          .email-header-top.
+            Самое лучшее предложение<br> из всех, которые вы получали
+          a.email-button(href="#")Подробнее
+      .email-content
+        .email-center
+          .email-tizers-wrapper
+            .email-tizer-item
+              img(src="img/icon_1.png" alt="icon")
+              p У нас есть лапки
+            .email-tizer-item
+              img(src="img/icon_2.png" alt="icon")
+              p ...и бумажные самольетики
+            .email-tizer-item
+              img(src="img/icon_3.png" alt="icon")
+              p Кроме того, у нас<br> есть чемодан
+          .email-sale-text Заказывайте сейчас - получите скидку
+          .email-products-wrapper
+            -for (var x=1; x<5; x++)
+              .email-products-item
+                a(href="#")
+                 img(src="img/items/"+x+".jpg", alt="product")
+                .mail-price 2 000 руб
+                a.product-button(href="#") Заказать
+    .email-footer.
+      ООО "Лучшее предложение"  <a href="#">Отписаться от рассылки.</a>
+
