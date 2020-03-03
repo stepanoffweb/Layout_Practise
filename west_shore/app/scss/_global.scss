@@ -175,10 +175,70 @@ h3 {
 }
 
 .surf,
-.travel {
+.holder {
     padding: 130px 0 120px;
 
 }
-.travel {
+.holder {
     padding-bottom: 265px;
+    margin-bottom: 35px;
+}
+.star-list {
+  li {
+    display: inline-block;
+  }
+}
+// input number styles
+.quantity {
+  // position: relative;
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity input:focus {
+    outline: 0;}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  display: block;
+  border: none;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 800;
+  background-color: transparent;
+  color: #fff;
+}
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45px;
+}
+.quantity-button.quantity-up {
+  position: absolute;
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 25px;
 }

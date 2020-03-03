@@ -66,16 +66,16 @@ gulp.task('export', function(){
   let buildHtml = gulp.src('app/**/*.html')
     .pipe(gulp.dest('dist'));
 
-  let BuildCss = gulp.src('app/css/**/*.css')
+  let buildCss = gulp.src('app/css/**/*.css')
     .pipe(gulp.dest('dist/css'));
 
-  let BuildJs = gulp.src('app/js/**/*.js')
+  let buildJs = gulp.src('app/js/**/*.js')
     .pipe(gulp.dest('dist/js'));
 
-  let BuildFonts = gulp.src('app/fonts/**/*.*')
+  let buildFonts = gulp.src('app/fonts/**/*.*')
     .pipe(gulp.dest('dist/fonts'));
 
-  let BuildImg = gulp.src('app/img/**/*.*')
+  let buildImg = gulp.src('app/img/**/*.*')
     .pipe(gulp.dest('dist/img'));
 });
 
@@ -85,6 +85,6 @@ gulp.task('watch', function(){
   gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
-gulp.task('build', gulp.series('clean', 'export'))
+gulp.task('build', gulp.series('clean', 'export'));
 
 gulp.task('default', gulp.parallel('css' ,'scss', 'js', 'browser-sync', 'watch'));

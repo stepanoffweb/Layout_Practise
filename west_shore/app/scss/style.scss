@@ -69,10 +69,6 @@
 }
 
 .dots-box {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -471,10 +467,23 @@
   }
 }
 
-.travel {
+.holder {
   background-image: url(../img/travel-bg.png);
+  &.sleep {
+  background-image: url(../img/frangipani.png);
+  }
   background-position: bottom right;
   background-repeat: no-repeat;
+  &-pricing__span {
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 5.25px;
+    font-weight: 400;
+    opacity: 0.75;
+  }
   .slider-arrows {
     top: 225px;
     opacity: .5;
@@ -502,11 +511,24 @@
       }
       .descr-head {
         position: relative;
-        padding-right: 78px;
+        padding-right: 68px;
+        &.descr__head-sleep {
+        position: relative;
+        padding-right: 185px;
+        }
         img {
           position: absolute;
           right: 0;
           top: 0;
+        }
+        .holder__star-list {
+          position: absolute;
+          top: 0;
+          right: 0;
+          img {
+            position: static;
+            padding-left: 0;
+          }
         }
       }
     }
@@ -537,20 +559,9 @@
       }
       &-title {
         position: relative;
-        width: 242px;
         font-size: 40px;
         line-height: 36px;
         font-weight: 800;
-        span {
-          position: absolute;
-          right: 40px;
-          bottom: -33px;
-          font-size: 14px;
-          line-height: 36px;
-          letter-spacing: 5.25px;
-          font-weight: 400;
-          opacity: 0.75;
-        }
       }
     }
   }
