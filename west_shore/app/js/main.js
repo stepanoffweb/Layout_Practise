@@ -28,7 +28,7 @@ $(function(){
         arrows: false,
         focusOnSelect: true
     });
-    $('.holder__slider').slick({
+    $('.holder__slider, .shop__slider').slick({
         infinite: true,
         fade: true,
         slidesToShow: 1,
@@ -74,6 +74,10 @@ $(function(){
     $('.quantity-button').on('click', function() {
         let sum = $('.nights').val() * $('.sum').data('nights') + ($('.guests').val() - 1) * $('.sum').data('guests');
         $(".sum").html('$' + sum);
+    });
+
+    $(".surfboard-box__circle").on('click', function() {
+      $(this).toggleClass('active');
     });
 
 
