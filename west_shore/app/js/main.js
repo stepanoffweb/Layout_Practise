@@ -13,6 +13,10 @@ $(function(){
         asNavFor: '.header__slider'
     });
 
+    $('.menu-btn').on('click', function() {
+      $('.menu').toggleClass('active');
+    });
+
     $('.surf-slider').slick({
         slidesToShow: 4,
         slidesTOScroll: 1,
