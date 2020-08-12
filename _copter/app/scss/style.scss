@@ -3,8 +3,99 @@
 @import "fonts";
 @import "global";
 
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 30px;
+    z-index: 10;
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 30px;
+        text-transform: uppercase;
+        font-style: 15px;
+        line-height: 17px;
+        @extend %ubuntu-medium;
+    }
 
+    &__btn {
+        color: #fff;
+        background-color: transparent;
+        padding: 6px 28px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: all 0,3s;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
 
+    &__phone {
+        font-size: 16px;
+        line-height: 18px;
+        @extend %ubuntu-bold;
+    }
+}
 
+.menu {
+    &__list-item {
+        display: inline-block;
+
+        &+.menu__list-item {
+            padding-left: 20px;
+        }
+    }
+}
+.top {
+    background-image: url('../images/top-bg.jpg');
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        z-index: 1;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
+        opacity: 0.4;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    &__title {
+        font-size: 96px;
+        line-height: 115px;
+        @extend %sf-semibold;
+        margin-bottom: 25px;
+    }
+    &__text {
+        margin: 25px 0 35px;
+        max-width: 325px;
+    }
+    &__social-icon {
+        display: inline-block;
+        margin: 0 25px;
+    }
+    &__social-link {
+        opacity: 0.5;
+        transition: all .3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
 @import "media";
