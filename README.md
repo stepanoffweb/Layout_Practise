@@ -1,15 +1,13 @@
 # Layout_Practise
-  This repo is a collection of sites. To see separate project just go to it's branch and follow the instruction.
-  
+  This repo is a collection of sites. To see separate project just go to it's branch and follow the instruction.  
 ## FirstPortfolio (first_portfolio branch):
-  Simple 3-sections layout with WOW and Animation libs.
-  
+  Simple 3-sections layout with WOW and Animation libs.  
 ## Glo_pricing (glo_pricing branch):
-  Simple 3-screens adaptive page on flexbox technology.
-  
+  Simple 3-screens adaptive page on flexbox technology.  
 ## Css_NewYear (new_year branch):
   Training with CSS3 properties as 'transform-style: preserve-3d', 'backface-visibility: hidden' and JS prosessing coordinates of cursor position.
-
+## copter:
+  5-screens layout with jQuery, slick-carousel, libraries & SCSS, Gulp tools.
 ## LandingPage_skinali (skinali branch):
   Simple example of a landing page with header, footer and 12 sections from Glo Academy. It has a combined slider (slick
 and twentytwenty jQuery libs) and Spikme widget.
